@@ -12,7 +12,7 @@ body {
 }
 
 .web-title {
-    background: url('img/backg.jpeg') no-repeat top / cover;
+    background: url('img/bg.png') no-repeat top / cover;
     height: 600px;
     text-align: center;
     align-items: center;
