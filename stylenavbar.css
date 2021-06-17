@@ -158,6 +158,10 @@ header {
     border-bottom: 1px solid #ffefcf;
 }
 
+.dropdown-link > i {
+    transform: rotate(-90deg);
+}
+
 .arrow {
     position: absolute;
     width: 11px;
@@ -179,7 +183,20 @@ header {
     position: relative;
 }
 
-.navlink:hover > .dropdown {
+.dropdown.second {
+    top: 0;
+    left: 100%;
+    padding-left: 13px;
+    cursor: pointer;
+    transform: translateX(10px);
+}
+
+.dropdown.second .arrow {
+    top: 10px;
+    left: -5.5px;
+}
+
+.navlink:hover > .dropdown, .dropdown-link:hover > .dropdown {
     transform: translate(0, 0);
     opacity: 1;
     pointer-events: auto;
@@ -320,10 +337,9 @@ header {
     .navlink:hover > a {
         transform: scale(1);
         background-color: #e0642a;
-        transition: 0.5s;
     }
 
-    .dropdown {
+    .dropdown, .dropdown.second {
         position: initial;
         top: initial;
         left: initial;
@@ -334,17 +350,22 @@ header {
         padding: 0;
         background-color: #864000;
         display: none;
-        transition: 0.5s;
     }
 
-    .navlink:hover > .dropdown {
+    .dropdown.second {
+        background-color: #5f2e00;
+    }
+
+    .navlink:hover > .dropdown, .dropdown-link:hover > .dropdown {
         display: block;
-        transition: 0.5s;
     }
 
-    .navlink:hover > a > i, .dropdown-link:hover > a > i {
+    .navlink:hover > a > i {
         transform: rotate(360deg);
-        transition: 0.5s;
+    }
+
+    .dropdown-link:hover > a > i {
+        transform: rotate(450deg);
     }
 
     .dropdown-link > a {
@@ -352,6 +373,10 @@ header {
         color: #ffefcf;
         padding: 20px 32px;
         line-height: 1;
+    }
+
+    .dropdown.second .dropdown-link > a {
+        padding: 19px 32px 19px 48px;
     }
 
     .dropdown-link:not(:nth-last-child(2)) {
@@ -368,7 +393,6 @@ header {
 
     .navlink:hover .arrow {
         background-color: #864000;
-        transition: 0.5s;
     }
 
     .dropdown .dropdown .arrow {
@@ -377,18 +401,26 @@ header {
 
     .dropdown-link:hover > a {
         background-color: #a7491d;
-        transition: 0.5s;
+    }
+
+    .dropdown.second .dropdown-link:hover > a {
+        background-color: rgb(126, 64, 35);
     }
 
     .dropdown-link:first-child:hover ~ .arrow {
         background-color: #a7491d;
-        transition: 0.5s;
     }
 
     .navlink > a > i {
         font-size: 18px;
         transform: rotate(-90deg);
         transition: 0.7s;
+    }
+
+    .dropdown-link > a > i{
+        font-size: 18px;
+        transform: rotate(90deg);
+        transition: .7s;
     }
 
     .dropdown i {
