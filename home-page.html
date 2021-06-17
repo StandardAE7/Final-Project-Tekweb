@@ -4,17 +4,51 @@
         <title>The Landing Page</title> <!--title-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--setup responsive screen-->
         <meta charset="UTF-8"> <!--call emojis-->
-        <link rel="stylesheet" href=""> <!--css file-->
+        <link rel="stylesheet" href="stylenavbar.css"> <!--css file-->
+        <link rel="stylesheet" href="stylemainhome.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <!--navigation bar-->
-        <div class="navbar">
-            <ul>
-                <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-            </ul>
-        </div>
+        <header>
+            <div class="container">
+                <input type="checkbox" id="check" name="">
+                <div class="logo-container">
+                    <h3 class="logo">Cook<span>IT!</span></h3>
+                </div>
+                <div class="navbar">
+                    <div class="navlinks">
+                        <ul>
+                            <li class="navlink" style="--i: 0.6s"><a href="homopage.html">Home</a></li>
+                            <li class="navlink" style="--i: 0.7s"><a href="article.html">Article</a></li>
+                            <li class="navlink" style="--i: 0.85s">
+                                <a href="#">Recipes<i class="material-icons">arrow_drop_down</i></a>
+                                <div class="dropdown">
+                                    <ul>
+                                        <li class="dropdown-link" style="--i: 0.6s"><a href="recipe1.html">Recipe 1</a></li>
+                                        <li class="dropdown-link" style="--i: 0.7s"><a href="recipe2.html">Recipe 2</a></li>
+                                        <li class="dropdown-link" style="--i: 0.8s"><a href="recipe3.html">Recipe 3</a></li>
+                                        <li class="dropdown-link" style="--i: 0.9s"><a href="recipe4.html">Recipe 4</a></li>
+                                        <li class="dropdown-link" style="--i: 1s"><a href="recipe5.html">Recipe 5</a></li>
+                                        <li class="dropdown-link" style="--i: 1.1s"><a href="recipe6.html">Recipe 6</a></li>
+                                        <div class="arrow"></div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="navlink" style="--i: 1.1s"><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="log-sign" style="--i: 1.4s">
+                        <a href="login.html" class="btn transparent">Log In</a>
+                    </div>
+                </div>
+                <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <!--the title of the web-->
         <div class="web title">
             <h1>C<img src="img/fried-egg.png" alt="egg" width="50px" height="50px"><img src="img/fried-egg.png" alt="egg" width="50px" height="50px">K IT</h1>
