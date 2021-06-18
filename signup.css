@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    background: #FCF951FF;
+}
+
+.header{/*Header styling for signup page*/
+    padding: 0%;
+}
+
+.header a{/*Header hyperlink styling for signup page*/
+    color: #101820ff;
+    text-decoration: none;
+}
+
+/* for make table form */
+.box_signup {
+	width: 350px;
+      		 /*modified style background: white;*/
+	background: #484848;
+		/*modified style margin: 80px auto;*/
+    	margin :0px auto;
+    	padding: 30px 20px;
+    		/*modified style*/ 
+	padding-top: 15px;
+    	padding-bottom: 5px;
+    	border-radius: 20px;
+}
+/* for make sign up word */
+.content_sign {
+    text-align: center;
+    text-transform: uppercase;
+	/*modifed style*/
+    color: white;
+}
+/* for make colomn be tidied */
+label {
+    font-size: 11pt;
+}
+/* for make table form have a size */
+.form_signup {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    /*modified style margin-bottom: 20px;*/
+    margin-bottom: 10px;
+    /*modified style*/ 
+    border-radius: 20px;
+	border-style: solid;
+    border: none;
+    color: grey
+}
+/* for click button */
+.sign_button {
+    background: #46de4b;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    /*modified style border-radius: 3px;*/
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+/* to change colour the text of hyperlink */
+.link {
+	/*modified style color: white;*/
+    color: chartreuse;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.form_birthday {
+    box-sizing: border-box;
+    width: 32%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 10px; 
+    border-radius: 20px;
+    border-style: solid;
+    border: none;
+    color: grey
+}
+
+.text{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: white;
+    font-size: 11pt;
+}
+
+@media only screen and (max-width: 400px) {
+    .box_signup{
+	   width: 250px;
+    }
