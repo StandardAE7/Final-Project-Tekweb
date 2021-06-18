@@ -11,24 +11,102 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+.app {
+    position: relative;
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: auto repeat(3, 15rem) auto;
+    gap: 2rem;
+
+    /* NOTE This creates the fade in/out anumation */
+    opacity: 0;
+    transition: all 1s;
+}
+
+.hidden {
+    display: none;
+}
+
+.tulisan_login{
+    text-align: center;
+    text-transform: uppercase;
+    /*modified style*/
+        color: white;
+}
+ /* for square login */
+.kotak_login{
+    width: 350px;
+    /*modified style background: white;*/
+    background: #ff7a00;
+    /*modified style margin: 80px auto;*/
+    margin : 50px auto;
+    padding: 30px 20px;
+    /*modified style*/ 
+    padding-bottom: 5px;
+    border-radius: 20px;
+
+}
+
+ /* for size of font */
+label{
+    font-size: 11pt;
+}
+
+ /* for form */
+.form_login{
+    box-sizing : border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+    /*modified style*/ 
+    border-radius: 20px;
+    border-style: solid;
+    border: none;
+}
+
+ /* for button login */
+.tombol_login{
+    background:black;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    /*modified style border-radius: 3px;*/
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+ /* for clour link */
+.link{
+    /*modified style color: white;*/
+    color: black;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
 .web-title {
     background: url('img/bg8.png') no-repeat top / cover;
+    grid-column: span 3; /*Tambahin ini*/
     height: 600px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-top: 150px;
     transition: 0.5s;
 }
 
 .web-title p {
     font-size: 20px;
+    color: #864000; /*Tambahin ini*/
 }
 
 .web-title h1 {
     font-size: 100px;
     letter-spacing: 5px;
     margin-bottom: 10px;
+    color: #864000; /*Tambahin ini*/
 }
 
 .web-title img {
@@ -39,8 +117,8 @@ body {
 
 .web-title a {
     border: 2px solid #864000;
-    padding: 10px;
-    border-radius: 30px;
+    padding: 5px 10px;  /*Ubah ini*/
+    border-radius: 20px;
     color: #864000;
     margin-top: 5px;
 }
@@ -48,6 +126,11 @@ body {
 .web-title a:hover {
     background-color: #864000;
     color: #ffefcf;
+}
+
+.lt { /*Tambahin ini*/
+    grid-column: span 3;
+    grid-row: span 1;
 }
 
 .lt h2 {
@@ -82,6 +165,7 @@ body {
 
 .list-pict {
     display: grid;
+    grid-column: span 3; /*Tambahin ini*/
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 20px;
     grid-gap: 40px;
