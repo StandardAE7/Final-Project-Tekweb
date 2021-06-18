@@ -1,0 +1,78 @@
+/* this for the style font */
+body{
+	font-family: Arial;
+  background: #FCF951FF;
+}
+
+.header{/*Header styling for login page*/
+    padding: 0%;
+}
+
+.header a{/*Header hyperlink styling for login page*/
+    color: #101820ff;
+    text-decoration: none;
+}
+
+ /* for position */
+h1{
+	text-align: center;
+	font-weight: 300;
+}
+ /* for make text login */
+.tulisan_login{
+	text-align: center;
+	text-transform: uppercase;
+	/*modified style*/
+    	color: white;
+}
+ /* for square login */
+.kotak_login{
+	width: 350px;
+    /*modified style background: white;*/
+	background: #484848;
+	/*modified style margin: 80px auto;*/
+    margin : 50px auto;
+    padding: 30px 20px;
+    /*modified style*/ 
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+ /* for size of font */
+label{
+	font-size: 11pt;
+}
+ /* for form */
+.form_login{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+    /*modified style*/ 
+	border-radius: 20px;
+	border-style: solid;
+	border: none;
+}
+ /* for button login */
+.tombol_login{
+	background: #46de4b;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	/*modified style border-radius: 3px;*/
+    border-radius: 5px;
+	padding: 10px 20px;
+}
+ /* for clour link */
+.link{
+	/*modified style color: white;*/
+	color: chartreuse;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+@media only screen and (max-width: 400px) {
+    .kotak_login{
+	   width: 250px;
+    }
