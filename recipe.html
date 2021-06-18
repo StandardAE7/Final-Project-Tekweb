@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--setup responsive screen-->
         <meta charset="UTF-8"> <!--call emojis-->
         <link rel="stylesheet" href="stylenavbar.css"> <!--navbar style-->
-        <link rel="stylesheet" href=""> <!--the page style-->
+        <link rel="stylesheet" href="recipe.css"> <!--the page style-->
+        <link rel="stylesheet" href="footer.css"> <!--the footer style-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
@@ -108,94 +109,88 @@
                 </div>
             </div>
         </header>
+        
+        
         <!--title of the recipe-->
-        <div class="title-recipe">
-            <h1>Resep 1</h1>
-        </div>
+        <marquee id="marq"><h2>✨ RESEP SEBLAK ✨</h2></marquee>
+        
         <!--image of recipe-->
         <div class="image-recipe">
-            <img src="img/sample.png" alt="resep 1">
+            <img src="seblak.jpg" alt="resep 1" id="img">
         </div>
-        <div class="content-container">
-            <!--tools and ingredients-->
-            <div class="tools-ingredient">
-                <div class="tools">
-                    <h2>alat disini</h2>
-                    <ul>
-                        <li>alat satu</li>
-                        <li>alat dua</li>
-                        <li>alat tiga</li>
-                    </ul>
-                </div>
-                <div class="ingredient">
-                    <h2>bahan disini</h2>
-                    <ul>
-                        <li>bahan satu</li>
-                        <li>bahan dua</li>
-                        <li>bahan tiga</li>
-                    </ul>
-                </div>
-            </div>
-            <!--step-by-step recipe-->
-            <div class="step-by-step">
-                <h2>langkah2 ada disini</h2>
-                <ul>
-                    <li>langkah 1</li>
-                    <li>langkah 2</li>
-                    <li>langkah 3</li>
-                </ul>
-            </div>
-        </div>
-        <!--the comment-->
-        <div class="slideshow-container">
+        
+        
+        
+        <!--Section ALAT&BAHAN-content-->
+    <div id="content">
+        <h1><b>ALAT:</b></h1>
+        <br>
+            <ul>
+                <li>alat satu</li>
+                <li>alat dua</li>
+                <li>alat tiga</li>
+            </ul>
+        <br>
+        <br>
+        <br>
+        <h1><b>BAHAN:</b></h1>
+        <br>
+            <ul>
+                <li>alat satu</li>
+                <li>alat dua</li>
+                <li>alat tiga</li>
+            </ul>
+    </div>   
+        
+    <!--section LANGKAH-sidebar-->
+    <div id="sidebar">
+        <h1><b>LANGKAH-LANGKAH:</b></h1>
+        <br>
+        <ul>
+            <li>langkah 1</li>
+            <li>langkah 2</li>
+            <li>langkah 3</li>
+        </ul>
+    </div>  
+    
+    
+    
+    <!--section REVIEW-->
+    <div id="closing">
+        <div id="closing1"><h1>REVIEW:</h1>
+        <img src="chefsss.jpeg"> <!-- masukin slide -->
+        </div>     
+    </div>
 
-            <div class="mySlides fade">
-              <div class="chef-name">suprianto</div>
-              <img src="img/sample.png" style="width:100%">
-              <div class="text">rasanya sebegitunya</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="chef-name">abdi pangandaran</div>
-              <img src="img/fried-egg.png" style="width:100%">
-              <div class="text">rasanya seperti mau meninggal</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="chef-name">ronaldi</div>
-              <img src="img/sample.png" style="width:100%">
-              <div class="text">rasanya seperti ada kejunya</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-            </div>
-            <br>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
+        
+        
+        
+        <!--footer MASIH ADA ERROR-->
+      <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          <img src="logo.png" alt="" class="logo">
+          <div class="social-media">
+            <a href="https://web.facebook.com/Jokowi/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/AlbertAbe15"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gek.bintangg"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/kittendust"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/pt--tokopedia/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p class="rights-text">© 2021 Cook IT</p>
         </div>
-        <!--feedback-->
-        <div class="feedback-container">
-            <form action=""> <!--input the php file here-->
-                <div class="identity">
-                    <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username" value=""><br>
-                    <label for="email">E-mail:</label><br>
-                    <input type="text" id="email" name="email" value=""> <br>    
-                </div>
-                <div class="feedback">
-                    <label for="feedback">Your Feedback:</label><br>
-                    <input type="text" id="feedback" name="feedback" value=""> <br>
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Submit">
-                </div>
-              </form> 
+
+        <div class="right-col">
+          <h1>Our Newsletter</h1>
+          <div class="border"></div>
+          <p>Enter Your Email to get our news and updates.</p>
+          <form action="" class="newsletter-form">
+            <input type="text" class="txtb" placeholder="Enter Your Email">
+            <input type="submit" class="btn" value="submit">
+          </form>
         </div>
-        <!--footer-->
-        <footer></footer>
+      </div>
+    </footer>
+        
     </body>
 </html>
