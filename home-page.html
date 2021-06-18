@@ -109,70 +109,86 @@
             </div>
         </header>
         <!--the title of the web-->
-        <div class="web title">
-            <p>Welcome to</p>
-            <h1>C<img src="img/fried-egg.png" alt="egg" width="50px" height="50px"><img src="img/fried-egg.png" alt="egg" width="50px" height="50px">K IT!</h1>
-            <a href="#recipes" class="learn">Learn More</a>
+        <div class="kotak_login hidden">
+            <b class="tulisan_login">Log In</b>
+            <form action="List.html">
+                <br/>
+                <input type="text" name="username" class="form_login username-text" placeholder="Username">
+                <input type="password" name="password" class="form_login pass-text" placeholder="Password">
+                <input type="submit" class="tombol_login btn-submit" value="Sign In">
+                <br/>
+                <br/>
+                <center>
+                    <a class="link" href="signup.html">Haven't register yet?</a>
+                </center>
+            </form>
         </div>
-        <!--list picture of recipes on landing page-->
-        <div class="list pict" id="recipes">
-            <div class="lt">
-                <h2>Our Region Recipes</h2>
+        <main class="app">
+            <div id="home" class="web-title">
+                <p>Welcome to</p>
+                <h1>C<img src="img/fried-egg.png" alt="egg"><img src="img/fried-egg.png" alt="egg">K IT</h1>
+                <a href="#recipes" class="learn">Learn More</a>
             </div>
-            <a class="card" href="sumatra.html">
-                <div class="card-image">
-                    <img src="img/sum.jpg" alt="Sumatera">
+            <!--list picture of recipes on landing page-->
+            <div class="list-pict" id="recipes">
+                <div class="lt">                                            <!--Ini div lt aku pindahin dari yang awalnya di luar div list-pict jadi di dalemnya-->
+                    <h2>Our Region Recipes</h2>
                 </div>
-                <div class="details">
-                    <h3>Sumatera</h3>
-                    <p>The Best and Delicious Sumatran Cuisines.</p>
-                </div>
-            </a>
-            <a class="card" href="java.html">
-                <div class="card-image">
-                    <img src="img/java.jpg" alt="Java">
-                </div>
-                <div class="details">
-                    <h3>Java</h3>
-                    <p>The Best and Delicious Javanese Cuisines.</p>
-                </div>
-            </a>
-            <a class="card" href="borneo.html">
-                <div class="card-image">
-                    <img src="img/borneo.jpg" alt="Borneo">
-                </div>
-                <div class="details">
-                    <h3>Borneo</h3>
-                    <p>The Best and Delicious Borneo Cuisines.</p>
-                </div>
-            </a>
-            <a class="card" href="bali.html">
-                <div class="card-image">
-                    <img src="img/bali.jpg" alt="Bali">
-                </div>
-                <div class="details">
-                    <h3>Bali</h3>
-                    <p>The Best and Delicious Balinese Cuisines.</p>
-                </div>
-            </a>
-            <a class="card" href="sulawesi.html">
-                <div class="card-image">
-                    <img src="img/sulawesi.jpg" alt="Sulawesi">
-                </div>
-                <div class="details">
-                    <h3>Sulawesi</h3>
-                    <p>The Best and Delicious Sulawesi Cuisines.</p>
-                </div>
-            </a>
-            <a class="card" href="papua.html">
-                <div class="card-image">
-                    <img src="img/papua.png" alt="Papua">
-                </div>
-                <div class="details">
-                    <h3>Papua</h3>
-                    <p>The Best and Delicious Papua Cuisines.</p>
-                </div>
-            </a>
-        </div>
+                <a class="card" href="sumatra.html">
+                    <div class="card-image">
+                        <img src="img/sum.jpg" alt="Sumatera">
+                    </div>
+                    <div class="details">
+                        <h3>Sumatera</h3>
+                        <p>The Best and Delicious Sumatran Cuisines.</p>
+                    </div>
+                </a>
+                <a class="card" href="java.html">
+                    <div class="card-image">
+                        <img src="img/java.jpg" alt="Java">
+                    </div>
+                    <div class="details">
+                        <h3>Java</h3>
+                        <p>The Best and Delicious Javanese Cuisines.</p>
+                    </div>
+                </a>
+                <a class="card" href="borneo.html">
+                    <div class="card-image">
+                        <img src="img/borneo.jpg" alt="Borneo">
+                    </div>
+                    <div class="details">
+                        <h3>Borneo</h3>
+                        <p>The Best and Delicious Borneo Cuisines.</p>
+                    </div>
+                </a>
+                <a class="card" href="bali.html">
+                    <div class="card-image">
+                        <img src="img/bali.jpg" alt="Bali">
+                    </div>
+                    <div class="details">
+                        <h3>Bali</h3>
+                        <p>The Best and Delicious Balinese Cuisines.</p>
+                    </div>
+                </a>
+                <a class="card" href="sulawesi.html">
+                    <div class="card-image">
+                        <img src="img/sulawesi.jpg" alt="Sulawesi">
+                    </div>
+                    <div class="details">
+                        <h3>Sulawesi</h3>
+                        <p>The Best and Delicious Sulawesi Cuisines.</p>
+                    </div>
+                </a>
+                <a class="card" href="papua.html">
+                    <div class="card-image">
+                        <img src="img/papua.png" alt="Papua">
+                    </div>
+                    <div class="details">
+                        <h3>Papua</h3>
+                        <p>The Best and Delicious Papua Cuisines.</p>
+                    </div>
+                </a>
+            </div>
+        </main>
     </body>
 </html>
