@@ -14,6 +14,7 @@ const containerLogin = document.querySelector('.kotak_login');
 const navMenu = document.getElementsByClassName('navlink');
 const pictContainer = document.querySelector('.list-pict')
 const allPicture = document.querySelectorAll('.card-image');
+const footer = document.querySelector('footer');
 
 let belumLogin = false;
 
@@ -26,6 +27,7 @@ btnSubmit.addEventListener('click', function(e) {
         console.log("SAMA USERNAME & password");
         containerApp.style.opacity = 100;
         containerLogin.classList.add('hidden');
+        footer.style.display = 'block';
         belumLogin = true;
         for(let i = 0; i < navMenu.length; i++) {
             navMenu[i].style.display = 'block';
