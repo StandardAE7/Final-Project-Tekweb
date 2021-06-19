@@ -13,7 +13,7 @@ body {
 
 .app {
     position: relative;
-    max-width: 100rem;
+    max-width: 100%; /*Ubah 100rem ke 100% untuk bisa full di semua resolusi*/
     margin: 0 auto;
     display: grid;
     grid-template-columns: 4fr 3fr;
@@ -94,6 +94,7 @@ label{
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding-top: 150px
     transition: 0.5s;
 }
 
@@ -116,6 +117,7 @@ label{
 }
 
 .web-title a {
+    font-size: 20px; /*Tambahan euy*/
     border: 2px solid #864000;
     padding: 5px 10px;  /*Ubah ini*/
     border-radius: 20px;
@@ -133,10 +135,9 @@ label{
     grid-row: span 1;
 }
 
-.lt h2 {
+.lt h2 { /*Hilangin margin topnya ya*/
     color: #864000;
     padding: 10px;
-    margin-top: 48px;
     text-align: center;
     position: relative;
 }
@@ -144,7 +145,7 @@ label{
 .lt h2::before {
     content: '';
     display: block;
-    width: 520px;
+    width: 35%;
     height: 2px;
     background: #864000;
     position: absolute;
@@ -155,7 +156,7 @@ label{
 .lt h2::after {
     content: '';
     display: block;
-    width: 520px;
+    width: 35%;
     height: 2px;
     background:  #864000 ;
     position: absolute;
@@ -173,6 +174,8 @@ label{
 }
 
 .card {
+    width: 92%; /*Bisa Tambahin ini tapi masih belum fix ya*/
+    max-height: 100%;
     background-color: #864000;
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
@@ -185,7 +188,7 @@ label{
 
 .card-image img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     display: block;
     border-radius: 20px 20px 0 0;
 }
@@ -231,6 +234,9 @@ label{
         width: 400px;
         height: 2px;
         right: 3%;
+    }
+    .card {
+        grid-column: span 3;
     }
 }
 
