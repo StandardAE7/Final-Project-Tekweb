@@ -1,5 +1,5 @@
 #marq {
-    color: #E5AF90;
+    color: #D44000;
     direction="left";
     padding: 10px;
 }
@@ -26,17 +26,17 @@
     padding-left: 3%;
     width: 40%;
     height: 700px;
-    background-color: RGB(216,169,149);
+    background-color: #D44000;
     float: left;
 }
 #content h1{ /* style for h1 content */
     font-size: 40px;
-    color:  RGB(172,115,95);
+    color:  #FFEFCF;
     text-align: center;
 }
 #content ul{ /* style for p content */
     font-size: 20px;
-    color:  RGB(172,115,95);
+    color:  #FFEFCF;
     text-align: center;
 }
 
@@ -46,17 +46,17 @@
     padding-top: 15px;
     width: 60%;
     height: 700px;
-    background-color:RGB(231,203,179);
+    background-color:#FFEFCF;
     float: right;
 }
 #sidebar h1{ /* style for h1 sidebar2 */
     font-size: 40px;
-    color:  RGB(172,115,95);
+    color:  #D44000;
     text-align: center;
 }
 #sidebar ul{  /* style for p sidebar2 */
     font-size: 20px;
-    color:  RGB(172,115,95);
+    color:  #D44000;
     text-align: center;
 }
 
@@ -75,7 +75,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 20px;
-    color:  RGB(172,115,95);
+    color:  #D44000;
     text-align: center;
 }
 #closing1 img{ /* style for img review */
