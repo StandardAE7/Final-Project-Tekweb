@@ -50,6 +50,12 @@ header {
     line-height: 3rem;
 }
 
+.logo img {
+    transform: rotate(-90deg);
+    width: 22px;
+    height: 22px;
+}
+
 .logo span{
     font-weight: 300;
 }
