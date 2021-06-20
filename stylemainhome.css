@@ -1,15 +1,5 @@
-/*Ada beberapa yang aku revisi ya cek komennya aja, Untuk cardnya masih belum responsive ya, masih aku cari masalahnya hehe:)*/
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
-
-:root {
-    --clr-White              : hsl(0, 0%, 100%);
-    --clr-VeryDarkGrayishBlue: hsl(217, 19%, 35%);
-    --clr-DesaturatedDarkBlue: hsl(214, 17%, 51%);
-    --clr-GrayishBlue        : hsl(212, 23%, 69%);
-    --clr-LightGrayishBlue   : hsl(210, 46%, 95%);
-    --clr-shadow-200         : hsla(0, 0%, 0%, 0.125);
-}
 
 * {
     padding: 0;
@@ -176,7 +166,12 @@ label{
     top: 50%;
 }
 
+.lt.article {
+    margin-top: 40px;
+}
+
 .list-pict {
+    margin-top: -200px;
     grid-column: span 3; /*Tambahin ini*/
     grid-row: span 3;
     position: relative;
@@ -258,20 +253,44 @@ label{
     justify-content: center;
     position: relative;
     max-width: 100%;
-    background-color: var(--clr-White);
+    background-color: transparent;
+    border: 2px dotted #864000;
     border-radius: 10px;
     box-shadow: 0 0 60px var(--clr-shadow-200);
-    margin: 10px 40px;
 }
 
-.picture {
+.preview-article.one {
+    margin-left: 40px;
+    margin-right: 31.5%;
+}
+
+.preview-article.second {
+    margin-right: 40px;
+    margin-left: 31.5%;
+}
+
+.one .picture  {
     width: 100%;
-    height: 15rem;
+    height: 17rem;
     background-image: url(img/sample.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.second .picture.res {
+    width: 100%;
+    height: 17rem;
+    background-image: url(img/sample.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 0 10px 10px 0;
+}
+
+.second .picture.std {
+    display: none;
 }
 
 .article-section {
@@ -280,14 +299,21 @@ label{
 
 .article-section h2 {
     font-size: 1.2rem;
+    color: #864000;
     margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .article-section p {
-    color: var(--clr-DesaturatedDarkBlue);
+    color: #ff7a00;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 0;
+}
+
+.article-read {
+    color: #d44000;
+    text-decoration: none;
 }
 
 @media (max-width: 1320px) {
@@ -340,6 +366,37 @@ label{
     }
 }
 
+@media (max-width: 991px){
+    .preview-article.one {
+        margin-left: 50px;
+        margin-right: 50px ;
+    }
+    
+    .preview-article.second {
+        margin-left: 50px;
+        margin-right: 50px ;
+    }
+    
+    .one .picture {
+        border-radius: 10px 10px 0 0px;
+    }
+
+    .second .picture.std {
+        display: block;
+        width: 100%;
+        height: 17rem;
+        background-image: url(img/sample.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        border-radius: 10px 10px 0 0px;
+    }
+
+    .second .picture.res {
+        display: none;
+    }
+}
+
 @media (max-width: 880px) {
     .lt h2::before {
         width: 220px;
@@ -386,6 +443,32 @@ label{
         background-color: #864000;
         color: #ffefcf;
     }
+    
+    .lt h2::before {
+        width: 120px;
+        height: 2px;
+        left: 3%;
+    }
+    
+    .lt h2::after {
+        width: 120px;
+        height: 2px;
+        right: 3%;
+    }
+
+    .list-pict .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 30px;
+        margin-top: 50px;
+    }
+    
+    .list-pict .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 30px;
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 600px){
@@ -421,5 +504,11 @@ label{
     .web-title a:hover {
         background-color: #864000;
         color: #ffefcf;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .kotak_login{
+       width: 250px;
     }
 }
