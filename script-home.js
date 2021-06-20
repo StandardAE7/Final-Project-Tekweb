@@ -11,9 +11,10 @@ const passwordText = document.querySelector('.pass-text');
 const btnSubmit = document.querySelector('.btn-submit');
 const containerApp = document.querySelector('.app');
 const containerLogin = document.querySelector('.kotak_login');
-const navMenu = document.getElementsByClassName('navlink');
+const navMenu = document.getElementsByClassName('navlinks');
 const pictContainer = document.querySelector('.list-pict')
 const allPicture = document.querySelectorAll('.card-image');
+const cardPicture = document.querySelectorAll('.card-title');
 const footer = document.querySelector('footer');
 
 let belumLogin = false;
@@ -54,18 +55,30 @@ btnLogin.addEventListener('click', function (e) {
 
 pictContainer.addEventListener('mouseover', function(e) {
     e.preventDefault();
-    if (e.target.classList.contains('card-image')) {
+    if (e.target.classList.contains('card-title') || e.target.classList.contains('card-image')) {
         allPicture.forEach(el => {
             el.style.opacity = '0.2';
-        });
-        e.target.style.opacity = 1.0;
 
+        });
+
+        cardPicture.forEach(el => {
+            el.style.opacity = '0.2';
+        });
+
+        if (e.target.classList.contains('card-title')) {
+            e.target.style.opacity = 1.0;
+            e.target.previousElementSibling.style.opacity = 1.0;
+        } else {
+            e.target.style.opacity = 1.0;
+            e.target.nextElementSibling.style.opacity = 1.0;
+        }
     }    
 })
 
 pictContainer.addEventListener('mouseout', function(e) {
     e.preventDefault();
     allPicture.forEach(el => el.style.opacity = '1.0');
+    cardPicture.forEach(el => el.style.opacity = '1.0');
 })
 
 
