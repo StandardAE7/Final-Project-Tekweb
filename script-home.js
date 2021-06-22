@@ -19,21 +19,36 @@ const footer = document.querySelector('footer');
 
 let belumLogin = false;
 
+
+
 //Event Listener
 btnSubmit.addEventListener('click', function(e) {
     e.preventDefault();
     console.log("TEST");
 
-    if (usernameText.value == user.username && passwordText.value == user.password) {
-        console.log("SAMA USERNAME & password");
-        containerApp.style.opacity = 100;
-        containerLogin.classList.add('hidden');
-        footer.style.display = 'block';
-        belumLogin = true;
-        for(let i = 0; i < navMenu.length; i++) {
-            navMenu[i].style.display = 'block';
+    if (usernameText.value == user.username) {
+        if (passwordText.value != user.password) {
+            console.log("SALAH PASS");
+            alert("WRONG");
+            usernameText.value = passwordText.value = '';
+        } else if (passwordText.value == user.password) {
+            console.log("SAMA USERNAME & password");
+            containerApp.style.opacity = 100;
+            containerLogin.classList.add('hidden');
+            footer.style.display = 'block';
+            belumLogin = true;
+            console.log(passwordText.value);
+            for(let i = 0; i < navMenu.length; i++) {
+                navMenu[i].style.display = 'block';
+            }
+            const anchor = btnLogin.getElementsByTagName('a');
+            console.log(anchor[0]);
+            anchor[0].innerHTML = "Sign Out";
+        } else {
+            console.log("TIDAK TAU SALAH APA");
+            alert("WRONG");
+            usernameText.value = passwordText.value = '';
         }
-
     } else {
         console.log("TIDAK SAMA USERNAME");
         alert("WRONG");
@@ -50,6 +65,17 @@ btnLogin.addEventListener('click', function (e) {
 
     } else {
         console.log("SUDAH LOGIN");
+        containerApp.style.opacity = 0;
+        for(let i = 0; i < navMenu.length; i++) {
+            navMenu[i].style.display = 'none';
+        }
+        containerLogin.classList.add('hidden');
+        belumLogin = 0;
+
+        const anchor = btnLogin.getElementsByTagName('a');
+        console.log(anchor[0]);
+        anchor[0].innerHTML = "Log In";
+
     }
 })
 
@@ -80,6 +106,3 @@ pictContainer.addEventListener('mouseout', function(e) {
     allPicture.forEach(el => el.style.opacity = '1.0');
     cardPicture.forEach(el => el.style.opacity = '1.0');
 })
-
-
-
