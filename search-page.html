@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--setup responsive screen-->
         <meta charset="UTF-8"> <!--call emojis-->
         <link rel="stylesheet" href="stylenavbar.css"> <!--css file-->
-        <link rel="stylesheet" href=""> <!--insert search style file-->
+        <link rel="stylesheet" href="search-page.css"> <!--insert search style file-->
         <link rel="stylesheet" href="stylefooter.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -125,31 +125,18 @@
                 </center>
             </form>
         </div>
-        <div class="search-recipe">
-            <h1>Search A Recipe</h1>
-            <input type="text" id="myInput" onkeyup="" placeholder="Search recipe..">
-        </div> <!--insert the function in onkeyup-->
-        <div class="result-search">
-            <ul id="myUL">
-                <li class="recipe-result"><a href="recipesumatra1.html"><img src="img/sample.png" alt="recipe-sumatera-1">Recipe 1</a></li>
-                <li class="recipe-result"><a href="recipesumatra2.html"><img src="img/sample.png" alt="recipe-sumatera-2">Recipe 2</a></li>
-                <li class="recipe-result"><a href="recipesumatra3.html"><img src="img/sample.png" alt="recipe-sumatera-3">Recipe 3</a></li>
-                <li class="recipe-result"><a href="recipejava1.html"><img src="img/sample.png" alt="recipe-java-1">Recipe 1</a></li>
-                <li class="recipe-result"><a href="recipejava2.html"><img src="img/sample.png" alt="recipe-java-2">Recipe 2</a></li>
-                <li class="recipe-result"><a href="recipejava3.html"><img src="img/sample.png" alt="recipe-java-3">Recipe 3</a></li>
-                <li class="recipe-result"><a href="recipeborneo1.html"><img src="img/sample.png" alt="recipe-borneo-1">Recipe 1</a></li>
-                <li class="recipe-result"><a href="recipeborneo2.html"><img src="img/sample.png" alt="recipe-borneo-2">Recipe 2</a></li>
-                <li class="recipe-result"><a href="recipeborneo3.html"><img src="img/sample.png" alt="recipe-borneo-3">Recipe 3</a></li>              
-                <li class="recipe-result"><a href="recipebali1.html"><img src="img/sample.png" alt="recipe-bali-1">Recipe 1</a></li>
-                <li class="recipe-result"><a href="recipebali2.html"><img src="img/sample.png" alt="recipe-bali-2">Recipe 2</a></li>
-                <li class="recipe-result"><a href="recipebali3.html"><img src="img/sample.png" alt="recipe-bali-3">Recipe 3</a></li>
-                <li class="recipe-result"><a href="recipesulawesi1.html"><img src="img/sample.png" alt="recipe-sulawesi-1">Recipe 1</a></li>
-                <li class="recipe-result"><a href="recipesulawesi2.html"><img src="img/sample.png" alt="recipe-sulawesi-2">Recipe 2</a></li>
-                <li class="recipe-result"><a href="recipesulawesi3.html"><img src="img/sample.png" alt="recipe-sulawesi-3">Recipe 3</a></li>
-                <li class="recipe-result"><a href="recipepapua1.html"><img src="img/sample.png" alt="recipe-papua-1">Recipe 1</a></li>
-                <li class="recipe-result"><a href="recipepapua2.html"><img src="img/sample.png" alt="recipe-papua-2">Recipe 2</a></li>
-                <li class="recipe-result"><a href="recipepapua3.html"><img src="img/sample.png" alt="recipe-papua-3">Recipe 3</a></li>
-            </ul>
+        <div class="search-title">
+            <h2>Search for a Recipe</h2>
+        </div>
+        <div class="wrapper">
+            <div class="search-input">
+                <a href="" target="_blank" hidden></a>
+                <input type="text" placeholder="Type to Search Recipe...">
+                <div class="autocom-box">
+                    <!--Suggestion-->
+                </div>
+                <div class="search-icon"><i class="material-icons">search</i></div>
+            </div>
         </div>
         <!--footer-->
         <footer>
