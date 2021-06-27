@@ -247,7 +247,7 @@ label{
 .card-description {
     padding: 5px 25px 20px;
 }
-  
+/*CSS Article Preview*/
 .preview-article {
     grid-column: span 3;
     justify-content: center;
@@ -344,6 +344,7 @@ label{
     }
 }
 
+/*Article Resposive Pertama*/
 @media (min-width: 991px) {
     .preview-article {
         display: flex;
@@ -366,6 +367,7 @@ label{
     }
 }
 
+/*Article Responsive 2*/
 @media (max-width: 991px){
     .preview-article.one {
         margin-left: 50px;
