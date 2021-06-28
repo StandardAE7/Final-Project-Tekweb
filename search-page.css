@@ -161,12 +161,12 @@ label{
 .search-input .search-icon {
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 5%; /*Ubah ini*/
     height: 55px;
     width: 55px;
     text-align: center;
     line-height: 55px;
     font-size: 20px;
-    color: #644bff;
+    color: #864000; /*Ubah ini*/
     cursor: pointer;
 }
