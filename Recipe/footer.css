@@ -1,0 +1,138 @@
+/* body {
+    margin: 0;
+    padding: 0;
+} */
+
+footer {
+    background: #f1f1f1;
+    padding: 0 0;
+    font-family: "Open Sans", sans-serif;
+    /* display: none; */
+
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    /* height: 1%; */
+}
+
+.logo {
+    width: 180px;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+
+.social-media a:hover {
+    color: #fc5c65;
+}
+
+.right-col h1{
+    font-size: 26px;
+}
+
+
+.border-footer {
+    width: 150px;
+    height: 4px;
+    background: #fc5c65;
+    margin-top: 20px;;
+    margin-bottom: 30px;;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.txtb-footer {
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 310px;
+    margin-right: 10px;
+}
+
+.btn-footer {
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #ff7a00;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+
+.btn-footer:hover {
+    opacity: .7;
+}
+
+/* BUAT PAGE */
+/* .page-content {
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+/* SAMPAI SINI AJA BUAT PAGE */
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 960px) {
+    .footer-container{
+        max-width: 600px;
+        /* height: 450px; */
+    }
+
+    .right-col{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .left-col{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .btn-footer {
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
