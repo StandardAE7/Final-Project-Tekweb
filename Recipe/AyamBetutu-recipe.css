@@ -19,6 +19,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    /*--------kayaknya fotonya ga bisa deh :(------*/
     background: url(AyamBetutu.JPEG);
     background-size: cover;   
 }
