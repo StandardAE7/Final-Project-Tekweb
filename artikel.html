@@ -16,17 +16,18 @@
                 <a href="#button">Learn More</a>
             </div>
             <div class="imgBox">
-                <img src="kentang.png" class="starbucks">
+                <img src="potato.png" class="fotofoto">
             </div>
         </div>
         
         <!--thumb-->
         <ul class="thumb">
-            <li><img src="kentang.png" onclick="imgSlider('kentang.png');changeCircleColor('#F9C774')"></li>
-            <li><img src="donatfix.png" onclick="imgSlider('donatfix.png');changeCircleColor('#F7B955')"></li>
-            <li><img src="mashpot.png" onclick="imgSlider('mashpot.png');changeCircleColor('#D07F17')"></li>
+            <li><img src="potato.png" onclick="imgSlider('potato.png');changeCircleColor('#F7B955')"></li>
+            <li><img src="donatfix.png" onclick="imgSlider('donatfix.png');changeCircleColor('#F9C774')"></li>
+            <li><img src="mash.png" onclick="imgSlider('mash.png');changeCircleColor('#D07F17')"></li>
         </ul>
     </section>
+    
     <section class="description" id="button">
         <div>
             <h2>KENTANG JADI DONAT</h2>
@@ -43,7 +44,7 @@
     <!--script-->
     <script type="text/javascript">
         function imgSlider(anything){
-            document.querySelector('.starbucks').src=anything;
+            document.querySelector('.fotofoto').src=anything;
         }
         function changeCircleColor(color){
             const circle = document.querySelector('.circle');
