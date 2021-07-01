@@ -87,6 +87,68 @@ label{
     font-size: 10pt;
 }
 
+.list-title {
+    text-align: center;
+    margin-top: 70px;
+    font-size: 35px;
+    color: #ff7a00;
+}
+
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 70px;
+  }
+  
+.card {
+    margin: 50px 50px;
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+  
+.card .card_image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+  
+.card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+}
+  
+.card .card_title {
+    color: #864000;
+    display: block;
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    height: 40px;
+}
+  
+.card:hover {
+    transform: scale(0.9, 0.9);
+}
+  
+@media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+}
+
 .search-title {
     text-align: center;
     margin-top: 100px;
@@ -96,11 +158,11 @@ label{
 
 ::selection {
     color: #ffefcf;
-    background-color: #664AFF;
+    background-color: #864000; /*Aku ganti warna ini ya biar sesuai dengan tema kita*/
 }
 
 .wrapper {
-    max-width: 450px;;
+    max-width: 450px;
     margin: 150px auto;
 }
 
